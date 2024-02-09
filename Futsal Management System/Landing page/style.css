@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right:0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #24262b;
+	padding: 15	px 100px;
+}
+.logo span{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 12px;
+    left: 50px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 60%;
+}
+.navbar{
+    display: flex;
+    
+}
+.navbar li{
+    position: relative;
+    color: white;
+    list-style: none;
+    
+}
+.navbar a{
+    text-decoration: none;
+	font-size: 1rem;
+	padding:10px 20px;
+	font-weight: 500;
+    color: white;
+}
+.logout a{
+    text-decoration: none;
+	font-size: 1rem;
+	padding:10px 20px;
+	font-weight: 500;
+    color: white;
+}
+.navbar a::after{
+	content: "";
+	width: 0;
+	height: 3px;
+	background: #e91e63;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	transition: 0.5s;
+}
+.navbar a:hover::after{
+	width: 100%;
+}
+.home{
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	background-image: url('/img/ground1.jpg');
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: cover;
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(2,1fr);
+}
+.home .text img{
+    border: 3px solid white;
+    width: 550px;
+    height: 450px;
+    position: absolute;
+    left: 120px;
+    top:150px;
+}
+.home .text h1{
+    position: absolute;
+    left: 300px;
+    top:600px;
+    color: white;
+}
+.home .explore a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: #24262b;
+    border-radius: 50px;
+    position: absolute;
+    left: 330px;
+    top: 630px;
+}
+.home .explore a:hover{
+    background-color: #e91e63;
+}
+.home .scorecard{
+    border: 1px solid white;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    background-color: #ffffff;
+    left: 850px;
+    top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+.home .scorecard #scoreA,#scoreB{
+    font-size: 24px;
+  font-weight: bold;
+}
+.copyright{
+    color: #ffffff;
+    text-align: center;
+
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: #24262b;
+    padding: 20px 0;
+}
+.footer-col{
+    width: 30%;
+    padding: 0 50px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 300;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left:8px;
+}
+.footer-col .social a{
+    display: inline;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+
+}
